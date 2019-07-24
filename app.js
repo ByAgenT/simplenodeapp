@@ -1,3 +1,16 @@
+const appInsights = require('applicationinsights');
+appInsights
+  .setup('dcc274ea-a72d-4e72-aeae-24bf907bcce9')
+  .setAutoDependencyCorrelation(true)
+  .setAutoCollectRequests(true)
+  .setAutoCollectPerformance(true)
+  .setAutoCollectExceptions(true)
+  .setAutoCollectDependencies(true)
+  .setAutoCollectConsole(true)
+  .setUseDiskRetryCaching(true)
+  .setSendLiveMetrics(true)
+  .start();
+
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
