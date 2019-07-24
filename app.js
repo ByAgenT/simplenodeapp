@@ -11,19 +11,6 @@ appInsights
   .setSendLiveMetrics(true)
   .start();
 
-const appInsights = require('applicationinsights');
-appInsights
-  .setup('70567847-69db-4e46-b8e1-52f68b8aa8b5')
-  .setAutoDependencyCorrelation(true)
-  .setAutoCollectRequests(true)
-  .setAutoCollectPerformance(true)
-  .setAutoCollectExceptions(true)
-  .setAutoCollectDependencies(true)
-  .setAutoCollectConsole(true)
-  .setUseDiskRetryCaching(true)
-  .setSendLiveMetrics(true)
-  .start();
-
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
